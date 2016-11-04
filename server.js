@@ -6,6 +6,9 @@ var request = require('request');
 
 app.listen((process.env.PORT || 8080));
 
+app.use(bodyParser.json()) ;
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.get('/', function (req, res) {
     res.send('Hi! Madan Here.');
 });
