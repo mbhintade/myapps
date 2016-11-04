@@ -5,7 +5,7 @@ var app = express();
 app.listen((process.env.PORT || 8080));
 
 app.get('/', function (req, res) {
-    res.send('This is TestBot Server');
+    res.send('1360571908');
 });
 
 //http.createServer(function (req, res) {
