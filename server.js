@@ -10,28 +10,8 @@ app.use(bodyParser.json()) ;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', function (req, res) {
-    res.send('Hi! Madan Here.');
+    res.send('Hi! Madan Here. How are you?');
 });
-
-//http.createServer(function (req, res) {
-//    
-//    res.writeHead(200, { 'Content-Type': 'text/html' });
-//    res.end('Hello, world! Madan');
-//    
-//}).listen(process.env.PORT || 8080);
-
-//var express = require('express');
-//var bodyParser = require('body-parser');
-//var request = require('request');
-//var app = express();
-
-//app.use(bodyParser.urlencoded({extended: false}));
-//app.use(bodyParser.json());
-//app.listen((process.env.PORT || 8080));
-//// Server frontpage
-//app.get('/', function (req, res) {
-//    res.send('This is TestBot Server');
-//});
 
 // Facebook Webhook
 app.get('/webhook', function (req, res) {
